@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Ravneet Kaur - Portfolio Website (Assignment 14)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  Overview
+This is my final portfolio project for **Coding Assignment 14**, built with **React + TypeScript** and styled using my custom component library from previous assignments.  
+It highlights:
+- My **Basic Information**
+- **Work Experience**
+- **Skills**
+- **Resources** I used throughout the course
+- **Developer Setup**
 
-## Available Scripts
+The project is **dockerized** and runs at `http://localhost:5575` in production mode.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠 Tech Stack
+- **React 18** with TypeScript
+- **Custom Component Library** (Button, Card, HeroImage, Img, Dropdown, RadioButton, Table components, etc.)
+- **CSS Styling**
+- **Docker** for production containerization
+- **Nginx** for serving the production build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Project Structure
+ravneet-portfolio/
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── App.tsx # Main application file
+│ ├── index.tsx # Entry point
+│ └── App.css # Styles
+├── Dockerfile
+├── nginx.conf
+├── package.json
+├── tsconfig.json
+└── README.md
 
-### `npm test`
+##  Running Locally (Development)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ravneetkaur9/coding_assignment_14
+   cd YOUR-REPO-NAME
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
 
-### `npm run build`
+bash
+Copy
+npm install
+Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy
+npm start
+Visit:
+http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Running with Docker (Production)
+Build the Docker image:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy
+docker build -t kaur_ravneet_coding_assignment14 .
+Run the container:
 
-### `npm run eject`
+bash
+Copy
+docker run -d --rm -p 5575:80 --name kaur_ravneet_coding_assignment14 kaur_ravneet_coding_assignment14
+Visit:
+http://localhost:5575
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Features
+Basic Information
+Name, education, and career goals.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Passion for web development and openness to opportunities.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Work
+Real-world experience: Front-End Associate at Rona
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Aspiring Full-Stack Web Developer profile.
 
-## Learn More
+Skills
+Languages: JavaScript, TypeScript, Python, Ruby
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frameworks: React, Rails, Flask
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Tools: Docker, GitHub, Storybook, VSCode
 
-### Code Splitting
+Resources
+Clickable links to tutorials and guides I used:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Dockerize Your React App
 
-### Analyzing the Bundle Size
+Create and Publish a React Component Library
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Pre-commit Hook with Prettier & ESLint using Husky
 
-### Making a Progressive Web App
+Build CI/CD Pipeline with GitHub Actions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Build a Portfolio Website with React
 
-### Advanced Configuration
+Developer Setup
+VSCode with JetBrains Mono font
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+One Dark Pro theme
 
-### Deployment
+Integrated terminal using PowerShell
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Deliverables
+GitHub Repository: https://github.com/Ravneetkaur9/coding_assignment_14
 
-### `npm run build` fails to minify
+Dockerized Production Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Zip File for LEARN Dropbox submission
+
+# Author
+Ravneet Kaur
+Currently pursuing Full Stack Web Development at Red River College Polytechnic
+Passionate about building intuitive and high-performing web applications.
+
+

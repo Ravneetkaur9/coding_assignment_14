@@ -1,0 +1,25 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
