@@ -2,7 +2,7 @@
 FROM node:18-alpine AS build
 
 # Assignment requirement: working dir name
-WORKDIR /lastName_firstName_final_site
+WORKDIR /kaur_ravneet_final_site
 
 # Install deps (use lockfile when present)
 COPY package*.json ./
@@ -19,7 +19,7 @@ FROM nginx:1.25-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy the production build from the builder stage
-COPY --from=build /lastName_firstName_final_site/build /usr/share/nginx/html
+COPY --from=build /kaur_ravneet_final_site/build /usr/share/nginx/html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
